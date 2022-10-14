@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Never call document.write after the document has finished loading.
+        It will overwrite the whole document.</p>
+        <!-- let's try that, nice it worked everything is gone but the 'what it is =)' -->
+        <script>
+            function writeAfter(){
+                document.write("what it is.");
+            } 
+        </script>
+        <button type="button" onclick="writeAfter()">documentWriteAfterLoad</button>
+    </body>
+</html> 
+
+

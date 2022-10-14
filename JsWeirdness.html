@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript weridness</h1>
+
+<p>The result of adding 2 + 3 + "5" is:</p>
+<p id="demo">demo</p>
+<p id="test">test</p>
+<p id="odd">odd</p>
+
+<script>
+// as far as I can tell this is adding 2 and 3 then converting to string and concating the 5.. wierd.
+let x = 2 + 3 + "5";
+document.getElementById("demo").innerHTML = x;
+
+// you can declare variables on mutiple lines..
+let person = "John Doe",
+carName = "Volvo",
+price = 200;
+document.getElementById("test").innerHTML = person + " " + carName;
+
+// you can redeclare variables...
+var ding = "ding";
+var ding;
+document.getElementById("odd").innerHTML = ding;
+
+// if no assignment they equal undefined
+var blah;
+console.log(blah);
+
+</script>
+
+</body>
+</html>
