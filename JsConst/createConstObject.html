@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="test">Test</p>
+        <script>
+            try {
+                // the const object can still have properties change.
+                const car = {type:"BMW",model:"M3",color:"Black"};
+
+                // change color
+                car.color = "Red";
+
+                // but can't do this
+                // car = {type:"Ford",model:"F150",color:"Blue"};
+                             
+
+                // display
+                document.getElementById("test").innerHTML = `The ${car.type} model ${car.model} is ${car.color}.`;
+                }
+            catch (err) {
+                document.getElementById("test").innerHTML = err;
+                }
+            
+        </script>
+    </body>
+</html>
