@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Javascript datatype uniqueness.</h1>
+
+        <p id="output1">output1</p>
+        <p id="output2">output2</p>
+        <p id="output3">output3</p>
+        <p id="output4">output4</p>
+        <p id="output5">output5</p>
+        <p id="errorSpot">error spot</p>
+
+        <script>
+            
+            try 
+            {
+                // Strings can be declared with single or double quotes;
+                let truckOneDesc = 'Mike Ford';
+                let truckTwoDesc = "Nate Nissan";
+
+                document.getElementById("output1").innerHTML = truckOneDesc + truckTwoDesc;
+
+                // integers and decimals are both numbers;
+                let tireSizeOne = 3;
+                let tireSizeTwo = 4.32;
+                let reallyBigTire = 5e15;
+
+                document.getElementById("output2").innerHTML = tireSizeOne +":"+ typeof(tireSizeOne) 
+                                                       + " " + tireSizeTwo + ":"+ typeof(tireSizeTwo)
+                                                       + " " + reallyBigTire + ":"+ typeof(reallyBigTire);
+                
+                // oddly enough Javascript will convert datatypes in the same statement.
+                let bigTire = 4 + 6 + "Why";
+                let diffString = "Why" + 4 + 6;
+
+                document.getElementById("output3").innerHTML = bigTire + "||" + diffString;
+
+                // undefined and empty are different;
+                let undies;
+                let empty = "";
+
+                document.getElementById("output4").innerHTML = typeof(undies)
+                                                     + "<br>" + typeof(empty);
+            } 
+            catch (error) 
+            {
+                    document.getElementById("errorSpot").innerHTML = error;
+            }
+        </script>
+    </body>
+</html>
