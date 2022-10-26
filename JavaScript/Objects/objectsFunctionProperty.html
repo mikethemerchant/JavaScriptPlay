@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+    <p id="display"></p>
+
+    <script>
+
+        const car = {
+            type:"Maxda", 
+            model:"RX7", 
+            color:"black",
+            fullName: function() {
+                return this.type + " " + this.model;
+            }
+        };
+
+        document.getElementById("display").innerHTML = "I love my " + car.fullName();
+    </script>
+
+    </body>
+</html>
