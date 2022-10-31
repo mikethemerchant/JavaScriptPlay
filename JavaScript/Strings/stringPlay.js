@@ -19,3 +19,17 @@ console.log(werd);
 var findBob = newList.charAt("B"); 
 
 console.log(findBob);
+
+// string really treated as a char array, can reference with brackets
+let text = 'HELLO';
+console.log(text[1]);
+
+// split string into an array
+let array = charNames.split(',');
+
+let i = 0;
+while(i < array.length)
+{
+    console.log(array[i].trimStart().trimEnd());
+    i++;
+}
