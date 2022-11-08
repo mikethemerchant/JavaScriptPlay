@@ -1,5 +1,4 @@
-let str = "";
-for(let i = 0; i < 7; i++){
-    str += "#"
+
+for(let str = "#"; str.length < 8; str += "#"){
     console.log(str);
 }
