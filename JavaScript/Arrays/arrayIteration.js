@@ -39,8 +39,28 @@ console.log(find7);
 let find8 = numbers.findIndex( (value) => value == 8 );
 console.log(find8);
 
-// make an array from a anyh object with a lenth property [string] or iterable object.
+// make an array from a anyh object with a lenth property [string] or iterable object.  only 2015 ES6
 const myArr = Array.from("ABCDEFG");
 
 for( let x of myArr)
     console.log(x);
+
+// get a list of keys? i would call this indexes
+const keys = cars.keys();
+
+for (let x of keys) {
+    console.log(x);
+}
+
+// get a list of key value pairs.
+const entries = cars.entries();
+
+for (let x of entries) {
+    console.log(x);
+}
+
+// check if array element exists in array;
+if(cars.includes( "Ford" ))
+    console.log("it is there mike");
+else   
+    console.log("not there mike");
