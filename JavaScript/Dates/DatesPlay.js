@@ -17,3 +17,23 @@ console.log(d);
 console.log(d.toString()); //ok
 
 console.log(d.toUTCString()); //ok
+
+
+let msec = Date.parse("11/25/2022");
+console.log(msec);
+console.log(Date(msec));
+
+
+var d = new Date("11/25/2022");
+
+console.log(d.getFullYear());
+console.log(d.getMonth()+1); // zero based 
+console.log(d.getDate());
+console.log(d.getDay());
+console.log(d.getHours());
+console.log(d.getMinutes());
+
+var dd = new Date(Date.now());
+dd.setMonth(11);
+console.log(dd);
+
