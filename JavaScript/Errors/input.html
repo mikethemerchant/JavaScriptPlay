@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Input number between 5 and 10:</p>
+        <input id="in" type="text">
+        <button type="button" onclick="check()">Check</button>
+        <p id="results"></p>
+
+        <script>
+            function check(){
+                const message = document.getElementById("results");
+                message.innerHTML = "";
+                let x = document.getElementById("in").value;
+
+                try{
+                    if (x == "") throw "empty";
+                    if (isNaN(x)) throw "not a number";
+                    x = Number(x);
+                    if(x < 5) throw "too low";
+                    if(x > 10) throw "too high";
+                    message.innerHTML = 5 * x;
+                }
+                catch(err){
+                    message.innerHTML = "Input is " + err;
+                }
+            }
+        </script>
+
+    </body>
+</html>

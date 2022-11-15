@@ -19,3 +19,5 @@ console.log('1' ===  1);
 console.log(0 === false);
 
 // !== also does something but the reverse.
+
+console.log(false ? "yes":"no")
