@@ -1,1 +1,6 @@
-{"Tordack":{"age":25,"sex":"Male"},"Shiva":{"age":36,"sex":"Female"}}
+{
+    "Tordack":{"age":25
+               ,"sex":"Male"}
+,"Shiva":{"age":36
+         ,"sex":"Female"}
+}
