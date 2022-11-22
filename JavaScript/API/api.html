@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="loc">
+        </p>
+        <button onclick="getLocation()">Show Coords</button>
+
+        <script>
+            // this is an example of a browser API
+
+            const x = document.getElementById("loc");
+
+            function getLocation() {
+                try {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } catch {
+                    x.innerHTML = err;
+                }
+            }
+
+            function showPosition(position) {
+                x.innerHTML = "Lat: " + position.coords.latitude +
+                         "<br>Long: " + position.coords.longitude;
+            }
+        </script>
+    </body>
+</html>
