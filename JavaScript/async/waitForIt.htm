@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <h2>Wait for it..</h2>
+    <p id="demo">placeholder</p>
+<body>  ` 
+        <script>
+            async function boom() {
+                let thePromise = new Promise(function(resolve) {
+                        setTimeout(function() { resolve("BOOM");}, 3000);
+                });
+                document.getElementById("demo").innerHTML = await thePromise;
+            }
+            
+            boom();
+
+        </script>
+    </body>
+</html>
