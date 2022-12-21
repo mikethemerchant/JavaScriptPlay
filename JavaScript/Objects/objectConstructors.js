@@ -9,7 +9,7 @@ function Player (first, last, level, classType) {
         return this.firstName + ":" + this.classLevel;
     }
     this.levelUp = function (value) {
-        
+        this.classLevel = value;
     }
 }
 
@@ -28,4 +28,16 @@ mike.name = function () {
 console.log(mike.name()); // got to put the () on it to make it run function;
 
 // better way is just to add to the constructor.
+mike.levelUp(6);
 console.log(mike.nameLevel());
+
+
+// with prototype property you can add property to constructor
+Player.prototype.race = "orc";
+Player.prototype.classRace = function() {
+    return this.race + " " + this.classType;
+};
+
+const vince = new Player("Ziaz","More",4,"bard");
+
+console.log(vince.classRace());
