@@ -22,6 +22,16 @@ Object.defineProperty(obj, "subtract", {
     set : function (value) {this.count -= value;}
 });
 
+//Object.seal(obj);
+
+try {  // try catch didn't work
+    Object.defineProperty(obj, "square", {
+        set : function () {this.count * this.count;}
+    });
+} catch (error) {
+    console.log(error);
+}
+
 obj.count = 5;
 
 console.log(obj.count);
