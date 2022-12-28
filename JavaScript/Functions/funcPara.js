@@ -36,3 +36,29 @@ const ding = (...ns) => {
 }
 
 console.log(ding(1,2,3,6,8));
+
+x = findMax(34,2,123,44,22,55,333);
+y = findMax(4,9,1,0,12,77);
+
+console.log(`x:${x}y:${y}`);
+
+function findMax() {
+    let result = -Infinity;
+    for (let i = 0; i<arguments.length; i++)
+        if (arguments[i] > result) result = arguments[i];
+    return result;
+}
+
+// arrow 
+
+a = findMax(34,2,123,44,22,55,333);
+b = findMax(4,9,1,0,12,77);
+
+console.log(`a:${a}b:${b}`);
+
+function findMax() {
+    let result = -Infinity;
+    for (let i = 0; i<arguments.length; i++)
+        if (arguments[i] > result) result = arguments[i];
+    return result;
+}
