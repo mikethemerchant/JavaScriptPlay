@@ -49,16 +49,8 @@ function findMax() {
     return result;
 }
 
-// arrow 
+// Changes to arguments are not visible (reflected) outside the function.
+// arguments passed by value
 
-a = findMax(34,2,123,44,22,55,333);
-b = findMax(4,9,1,0,12,77);
-
-console.log(`a:${a}b:${b}`);
-
-function findMax() {
-    let result = -Infinity;
-    for (let i = 0; i<arguments.length; i++)
-        if (arguments[i] > result) result = arguments[i];
-    return result;
-}
+//Changes to object properties are visible (reflected) outside the function.
+// objects are passed by reference.
