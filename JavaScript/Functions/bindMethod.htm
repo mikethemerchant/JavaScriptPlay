@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <p id="test">testing this bind</p>
+    <script>
+        const person = {
+          firstName:"John",
+          lastName: "Doe",
+          display: function() {
+            let x = document.getElementById("test");
+            x.innerHTML = this.firstName + " " + this.lastName;
+          }
+        }
+        
+        setTimeout(person.display, 5000);
+        </script>
+</body>
+</html>
