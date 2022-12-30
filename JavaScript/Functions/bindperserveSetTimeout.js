@@ -18,7 +18,9 @@ setTimeout(player.display.bind(player),3000);
   setTimeout(() => player.display(), 4000);
   
 
-  console.log(werd);
+  console.log("werd");
+
+  
 
 
   

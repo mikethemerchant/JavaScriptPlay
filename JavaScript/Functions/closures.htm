@@ -1,0 +1,18 @@
+<html lang="en">
+<body>
+    <p id="result">0</p>
+    <button type="button" onclick="adder()">Add me</button>
+    <script>
+        // this is an anynomus function
+        const add = (function () {
+            let count = 0;
+            // this returns add as function expression, that has a private copy of count and is protected scope so it doesn't call the count= 0 again, only once.
+            return function () { count += 1; return count; }
+        })();
+
+        function adder() {
+            document.getElementById("result").innerHTML = add();
+        }
+    </script>
+</body>
+</html>
