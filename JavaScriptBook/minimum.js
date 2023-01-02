@@ -1,6 +1,5 @@
-function returnResult (testFunc,a,b) {
-    return(testFunc(a,b));
+function doTest (test,a,b) {
+    return test(a,b);
 }
 
-result = returnResult((a,b) => a < b ? a : b, 6,5)
-console.log(result);
+console.log( doTest( (a,b) => a < b ? a : b,2,3) );
