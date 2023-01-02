@@ -1,12 +1,6 @@
 function min(a,b) {
-    if(a < b) {
-        return a;
-    }
-    else {
-        return b;
-    }
+    return (a < b) ? a : b;
 }
 
-result = min(6,4);
-
+result = min(2,4);
 console.log(result);
