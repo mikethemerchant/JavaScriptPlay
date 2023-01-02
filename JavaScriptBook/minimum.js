@@ -1,6 +1,6 @@
-function min(a,b) {
-    return (a < b) ? a : b;
+function returnResult (testFunc,a,b) {
+    return(testFunc(a,b));
 }
 
-result = min(2,4);
+result = returnResult((a,b) => a < b ? a : b, 6,5)
 console.log(result);
