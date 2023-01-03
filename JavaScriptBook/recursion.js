@@ -8,13 +8,15 @@ function isEven (n) {
     } else if (n == 1) {
         console.log("1:" + n);
         return false;
+    } else if (n < 0) {
+        return isEven(-n);
     } else {
         console.log("else:" + n);
-        isEven(n - 2);
+        return isEven(n - 2);
     }
 }
 
-if(isEven(3) == true) {
+if(isEven(-16) == true) {
     console.log("even");
 } else {
     console.log("odd");
