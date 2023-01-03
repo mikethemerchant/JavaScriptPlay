@@ -16,6 +16,9 @@ const fruits = new Map([
     ["oranges", 200]
   ]);
   
+  fruits.set("pineapple",100);
+  fruits.set("bean",150);
+
   for (const x of fruits) {
         console.log(x[0]);
   }
