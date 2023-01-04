@@ -21,7 +21,7 @@ myFunction().then(
 
 async function myDisplay() {
     let myPromise = new Promise( function(resolve) {
-        setTimeout(()=> {resolve("I love you.");},2000);
+        setTimeout(()=> {resolve("Hi Mike.");},2000);
     });
     console.log(await myPromise);
 }
@@ -32,10 +32,9 @@ myDisplay();
 // async returns a new promise so you don't have to create a new promise
 // put setTimeout directly as the resolve
 
-async function printHiMike() {
-    console.log(await new Promise(resolve => setTimeout(resolve, 4000, "Hi Mike")));
+async function printHiDave() {
+    console.log(await new Promise(resolve => setTimeout(resolve, 4000, "Hello Dave")));
 }
-
-printHiMike();
+printHiDave();
 
   
