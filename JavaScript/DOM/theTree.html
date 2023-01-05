@@ -7,13 +7,25 @@
 </head>
 <body>
     <h1>Can I change h1?</h1>
-    <p id="test">test</p>
+    <p id="test" style="border: 1rem solid;">test</p>
     <p id="demo" class="bye">demo</p>
     <p id="werd" class="bye">werd</p>
-    <button onclick="changeTest()">changeTest</button>
-    <button onclick="changeAllps()">changeAllps</button>
-    <button onclick="changeByClass()">changeByClass</button>
+    <button id="changeTest" onclick="changeTest()">changeTest</button><br>
+    <button onclick="changeAllps()">changeAllps</button><br>
+    <button onclick="changeByClass()">changeByClass</button><br>
+    <button onclick="disableButton()">disable changeTest</button><br>
+    <button onclick="enableButton()">enable changeTest</button><br>
+    <button onclick="changeStyle()">changeStyle</button><br>
+    <button onclick="querySelect()">querySelect</button><br>
 
 <script src="scripts.js"></script>
+
+<form id="inputForm">
+    <input type="text" name="fname"><br>
+    <input type="text" name="lname">
+</form>
+<button onClick="putBelow()">putbelow</button>
+<p id="below">thebelow</p>
+<button onclick="opps()">opps</button>
 </body>
 </html>
