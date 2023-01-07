@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <title>Play with some events</title>
+</head>
+<body>
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+Click Me</div>
+
+<script>
+    function mDown(div) {
+        div.style.backgroundColor = "blue";
+        div.innerHTML = "release me";
+    }
+    function mUp(div) {
+        div.style.backgroundColor = "red";
+        div.innerHTML = "thank you"
+    }
+</script>
+    
+</body>
+</html>
