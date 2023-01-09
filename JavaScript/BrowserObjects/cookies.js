@@ -12,20 +12,12 @@ function getCookie(cookieName) {
         let c = cookieArray[i];
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
-            //console.log(c);
         }
         if(c.indexOf(name) == 0) {
             return c.substring(name.length, c.length);
         }
     }
     return "";
-}
-
-function removeItem(sKey, sPath, sDomain) {
-    document.cookie = encodeURIComponent(sKey) + 
-                  "=; expires=Thu, 01 Jan 1970 00:00:00 GMT" + 
-                  (sDomain ? "; domain=" + sDomain : "") + 
-                  (sPath ? "; path=" + sPath : "");
 }
 
 function showCookies() {
@@ -37,30 +29,18 @@ function setNewCookie() {
 }
 
 function deleteCookies() {
-    removeItem("username");
-
+    removeItem("username","/");
 }
 
-function onRemoved(cookie) {
-    console.log(`Removed: ${cookie}`);
-  }
-  
-  function onError(error) {
-    console.log(`Error removing cookie: ${error}`);
-  }
-  
-  function removeCookie(tabs) {
-    let removing = browser.cookies.remove({
-      url: tabs[0].url,
-      name: "username"
-    });
-    removing.then(onRemoved, onError);
-  }
-  
-
+function removeItem(sKey, sPath, sDomain) {
+    document.cookie = encodeURIComponent(sKey) + 
+                  "=; expires=Thu, 01 Jan 1970 00:00:00 GMT" + 
+                  (sDomain ? "; domain=" + sDomain : "") + 
+                  (sPath ? "; path=" + sPath : "");
+}
 
 function checkCookie() {
-    /*
+    
     let user = getCookie("username");
     if (user != "") {
         alert("Welcome " + user);
@@ -68,5 +48,5 @@ function checkCookie() {
         user = prompt("Please enter your name:", "");
         setCookie("username", user, 365);
     }
-    */
+    
 }
