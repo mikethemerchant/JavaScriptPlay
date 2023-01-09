@@ -13,7 +13,7 @@
 </body>
 <script>
     function changeAllPara() {
-        const thePs = document.getElementsByTagName("p");
+        const thePs = document.querySelectorAll("p");
         for (const p of thePs) {
             p.innerHTML = "Do It.";
         }
