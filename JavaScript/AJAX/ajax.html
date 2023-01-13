@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+<p id="state">test</p>
+
+<script>
+function loadDoc() {
+    // 1 create an xmlhttprequest object
+    const xhttp = new XMLHttpRequest();
+    // 2 define a callback function
+    xhttp.onload = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML = this.responseText; 
+        }        
+    }
+    updateStatus(xhttp);
+    // 3 open xmlhttprequest object
+    xhttp.open("GET", "ajax_info.txt");
+    updateStatus(xhttp);
+    // 4 send a request to a server
+    xhttp.send();
+    updateStatus(xhttp);
+}
+
+function updateStatus(httpRequest) {
+    document.getElementById("state").innerHTML = httpRequest.status;
+}
+</script>
+
+</body>
+</html>
