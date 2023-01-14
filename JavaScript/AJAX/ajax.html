@@ -19,7 +19,7 @@ function loadDoc() {
     }
     updateStatus(xhttp);
     // 3 open xmlhttprequest object
-    xhttp.open("GET", "ajax_info.txt");
+    xhttp.open("GET", "ajax_info.txt",true);
     updateStatus(xhttp);
     // 4 send a request to a server
     xhttp.send();
