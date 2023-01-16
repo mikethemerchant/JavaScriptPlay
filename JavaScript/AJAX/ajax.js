@@ -16,7 +16,7 @@ function printTable (i) {
     document.getElementById("show").innerHTML = cd[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue;
 }
 
-function next() {
+function next() {s
     if(i < len-1) {
         i++;
         printTable(i);

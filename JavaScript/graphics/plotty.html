@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<body>
+
+<div id="myPlot" style="width:100%;max-width:700px"></div>
+
+<script>
+var xArray = ["No Man Sky", "Elden Ring", "Star wars", "VR Game", "Werd Blah"];
+var yArray = [55, 49, 44, 24, 15];
+
+var data = [{
+  x:xArray,
+  y:yArray,
+  type:"bar"
+}];
+
+var layout = {title:"Games to play"};
+
+Plotly.newPlot("myPlot", data, layout);
+</script>
+
+</body>
+</html>

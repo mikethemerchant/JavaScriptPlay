@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <title>repleced by javascript 6</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <p id="demo">demo</p>
+    <p id="test">test</p>
+    <p id="hide">hide</p>
+    
+    <script>
+        $(document).ready(function() {
+          $("#demo").text("The text in Demo");
+        });
+
+        document.getElementById("test").innerHTML = "blah";
+
+        function what() {
+            var what = document.getElementsByTagName("p");
+            for(let i = 0; i < what.length; i++) {
+                what[i].innerHTML = "ppppppss";
+            }
+        }
+
+        function hide() {
+            const button = getElementById("hide");
+            button.style.display = "none"; // not working
+        }
+    </script>
+
+    <button onclick="what()">werd</button>
+
+    <button  onclick="hide()">hide</button>
+</body>
+</html>
