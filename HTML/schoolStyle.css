@@ -1,7 +1,10 @@
-.one {
-    background-color: tomato;
+.city {
+    background-color: red;
     color: white;
-    border: 2px solid black;
-    margin: 20px;
-    padding: 20px;
+    margin: 5px;
+  }
+.border {
+    border: 15px solid black;
+    padding: 5px;
+    background-color: blue;
   }
