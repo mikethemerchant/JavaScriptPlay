@@ -1,0 +1,43 @@
+h2 {
+    background-color: rgb(255, 200, 134, 0.4)
+}
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  p {
+    border: 10px solid powderblue;
+    padding: 75px;
+    margin: 50px;
+  }
+  table, th, td {
+    border:5px solid black;
+    border-radius: 20px;
+    border-style:dotted;
+    padding: 15px;
+    border-spacing: 5px;
+  }
+  tr:nth-child(even) {
+    background-color: gray;
+    
+  }
+  tr:hover {background-color: #D6EEEE;}
