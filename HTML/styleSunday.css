@@ -1,0 +1,11 @@
+.border {
+    border-style: dotted;
+    border-color: blue;
+}
+.image {
+    max-width: 400px;
+    max-height: 400px;
+}
+.box {
+    font-size: x-large;
+}
