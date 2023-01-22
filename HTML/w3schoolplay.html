@@ -2,14 +2,28 @@
 <html>
 <head>
     <link rel="stylesheet" href="schoolStyle.css">
-</head>
-<body>
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <base href="http://127.0.0.1:5500/HTML/" target="_blank">
+</head>
+<script>
+    function ding() {
+        alert("Ding.");
+    }
+</script>
+<body>
+    <img src="images/stickman.gif" width="24" height="39" alt="Stickman">
+    <a href="innerframe.html">HTML base Tag</a>
 <div class="city">
 <h2>London</h2>
 <p>London is the capital of England.</p>
 </div> 
 
+<iframe src="innerframe.html" name="iframe" height="200" width="500" title="where" style="border:none"></iframe>
+<p><a href="https://www.w3schools.com" target="iframe">W3Schools.com</a></p>
 <div class="city">
 <h2>Paris</h2>
 <p>Paris is the capital of France.</p>
@@ -21,7 +35,7 @@
 </div>
 
 <h2 class="border">werd</h2>
-
+<button onclick="ding()"></button>
 </body>
 </html>
 
