@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tuesday.css">
+    <script src="Tuesday.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>What it is.</div>
+    <form>
+        <label for="week" disabled>Select a week:</label>
+        <input type="week" id="week" name="week" disabled>
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="22" maxlength="30" required autofocus><br>
+
+
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+      
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="1980-01-02"><br><br>
+      
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" multiple>
+
+        <label for="country_code">Country code:</label>
+        <input type="text" id="country_code" name="country_code"
+        pattern="[A-Za-z]{2}" title="2 letter country code">
+        <input type="submit" value="Submit">
+
+
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone"
+        placeholder="123-455-6789"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ul>
+
+
+          <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+          </dl>
+
+          <code>
+            x = 5;
+            y = 6;
+            z = x + y;
+            </code>
+
+            <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+    
+            <p>Message from my computer:</p>
+            <p><samp>File not found.<br>Press F1 to continue</samp></p>
+    
+    
+    
+    
+    </form>
+</body>
+</html>
