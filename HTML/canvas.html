@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="500" height="500" style="border:1px solid #000000;">browser
+    </canvas>
+    <img id="scream" src="play.jpg" alt="The Scream" width="220" height="277">
+    <button onclick="canvas()">werd</button>
+    <script>
+        function canvas() {
+            var c = document.getElementById("canvas");
+            var ctx = c.getContext("2d");
+            var img = document.getElementById("scream");
+            ctx.drawImage(img,10,10);
+        }
+
+    </script>
+</body>
+</html>
