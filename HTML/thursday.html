@@ -7,8 +7,23 @@
     <script src="thursday.js"></script>
     <title>Document</title>
 </head>
-    <button onclick="sayHi()" class="button">say Hi</button>
 <body>
-    
+    <video id="video1">
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+      <br>
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <iframe width="420" height="315"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+</iframe>
+<p id="demo">Demo</p>
+<br>
+<button onclick="getLocation()">Location show</button>
 </body>
 </html>
