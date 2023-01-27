@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="friday.css">
+    <script src="friday.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div2" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <img src="redfox.jpg" id="drag" draggable="true" ondragstart="drag(event)" alt="redfox" width="336" height="69">
+    <br>
+    <input id="input" type="text" value="">
+    <p id="stored">Saved</p>
+    <button id="button" onclick="save()">Save</button>
+    <button id="button" onclick="recall()">Recall</button>
+    <p>Count numbers: <output id="result"></output></p>
+    <button onclick="startWorker()">Start Worker</button> 
+    <button onclick="stopWorker()">Stop Worker</button>
+</body>
+</html>
