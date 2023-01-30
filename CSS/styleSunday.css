@@ -1,31 +1,62 @@
 * {
-    background-color: brown;
+    background-color: lightblue;  /* you can comment in css that is cool */
 }
 
 
 h1,h2,h3 {
-    color:white;
+    color:blueviolet;
     text-align: center;
+    border: 20px solid blue;
+    height: 40px;
+    width: 80%;
 }
 
 #thisp {
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
-    background-color: aqua;
+    background-color: green;
+    border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+    border: 30px solid;
+    margin-left: 55px;
 }
 
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
-    background-color: azure;
+    background-color: rgba(0, 128, 0, 0.3);
+    border: 2px dotted pink;
+    outline-color:red;
 }
+
+p.three {
+    background-color: brown;
+    margin:auto;
+}
+
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
 
 .center {
     text-align: center;
-    color: red;
+    color: gray;
+    padding: 55px;
+    
 }
 
 .large {
     font-size: 300%
 }
 
+div {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+  }
