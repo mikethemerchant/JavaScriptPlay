@@ -1,0 +1,31 @@
+* {
+    background-color: brown;
+}
+
+
+h1,h2,h3 {
+    color:white;
+    text-align: center;
+}
+
+#thisp {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    background-color: aqua;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    background-color: azure;
+}
+
+.center {
+    text-align: center;
+    color: red;
+}
+
+.large {
+    font-size: 300%
+}
+
