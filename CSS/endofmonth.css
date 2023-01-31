@@ -1,0 +1,21 @@
+.one {
+    width: 650px;
+    margin: auto;
+    border: 5px solid #73AD21;
+    text-align: center;
+}
+  
+.two {
+    max-width: 200px;
+    margin: auto;
+    border: 8px solid blue;
+}
+
+.outline {
+    border: 2px solid black;
+    outline-style: dotted;
+    outline-color: blue;
+    outline-offset:15px;
+}
+
+.outlinePink {outline: thick ridge pink;}
