@@ -3,12 +3,14 @@
     margin: auto;
     border: 5px solid #73AD21;
     text-align: center;
+    font-family: "Audiowide", sans-serif;
 }
   
 .two {
     max-width: 200px;
     margin: auto;
     border: 8px solid blue;
+    font-family: "Sofia", sans-serif;
 }
 
 .outline {
@@ -19,3 +21,34 @@
 }
 
 .outlinePink {outline: thick ridge pink;}
+
+.blah { 
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+    /* white-space: nowrap; */
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CAF50;
+    text-decoration-line: overline;
+    text-shadow: 2px 2px 5px red;
+  }
+
+  h2 {
+    text-decoration-line: line-through;
+    text-shadow: 3px 3px 3px #ababab;
+  }
+  
+  h3 {
+    text-decoration-line: underline;
+  }
+
+  h4 {
+    text-decoration-line: underline;
+    text-decoration-color: green;
+  }
