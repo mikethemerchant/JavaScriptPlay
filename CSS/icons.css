@@ -23,9 +23,18 @@ a:link, a:visited {
     margin-left: 10px;
   }
 
+  li {
+    display: inline;
+  }
+
   table, th, td {
     width: 100%;
     border: 1px solid;
+  }
+
+  th {
+    background-color: #04AA6D;
+    color: white;
   }
 
   th, td {
@@ -35,4 +44,18 @@ a:link, a:visited {
 
   th, td {
     border-bottom: 1px solid #ddd;
+  }
+
+  tr:hover {background-color: coral;}
+
+.ex1 {
+    width: 500px;
+    margin: auto;
+    border: 3px solid #73AD21;
+  }
+  .sticky {
+    position: sticky;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
   }
