@@ -10,3 +10,29 @@ a:link, a:visited {
   a:hover, a:active {
     background-color: red;
   }
+
+  ul.b {
+    list-style-type: lower-alpha;
+    list-style-position: inside;
+  }
+
+  ul li {
+    background: red;
+    color: blue;
+    padding: 10px;
+    margin-left: 10px;
+  }
+
+  table, th, td {
+    width: 100%;
+    border: 1px solid;
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+
+  th, td {
+    border-bottom: 1px solid #ddd;
+  }
