@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .center {
+        margin: auto;
+        width: 75%;
+        border: 3px solid red;
+        padding: 5px;
+}
+.right {
+    position: absolute;
+    right:100px;
+    border: 3px solid;
+    padding: 10px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+div {
+  border: 3px solid #4CAF50;
+  padding: 5px;
+}
+
+.img1 {
+  float: right;
+}
+</style>
+</head>
+<body>
+    <div class="clearfix">
+        <img class="img1" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+      </div>
+</body>
+</html>
