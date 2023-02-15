@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    :root {
+        --red: #af1212;
+        --white: #ffffff;
+    }
+
+    body {
+        background-color: var(--red);
+    }
+    div {
+        background-color: var(--white);
+    }
+</style>
+<script>
+    function black() {
+        var r = document.querySelector(':root');
+        r.style.setProperty('--red', 'black');
+        r.style.setProperty('--white', 'black');
+    }
+</script>
+</head>
+<body>
+    I can do anything.
+    <div>
+        what it is
+    </div>
+    <button onclick="black()" >PAINT IT BLACK</button>
+</body>
+</html>
