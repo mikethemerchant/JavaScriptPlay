@@ -1,9 +1,29 @@
-img {
-    width:auto;
-    height:auto;
-    float: left;
-    margin-left:5px;
-    margin-right:5px;
-    max-height:900px;
-    max-width:900px;
+/*
+    Q: how can I make the div to the right of the image?
+    A: use float: left; on the image
+*/
+.background {
+    background-color: lightgrey;
+    border: 2px solid red;
 }
+
+img {
+    width: 100%;
+    height:auto;
+    max-width:1024px;
+    border: 2px solid pink;
+    float: left;
+}
+
+@media only screen and (max-width: 1300px) {
+    img {
+        float: none;
+        
+    }
+    div {
+            position: sticky;
+            right: 0;
+            bottom: 0; 
+    }
+  }
+
