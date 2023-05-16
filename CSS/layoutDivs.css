@@ -1,7 +1,3 @@
-/*
-    Q: how can I make the div to the right of the image?
-    A: use float: left; on the image
-*/
 .background {
     background-color: lightgrey;
     border: 2px solid red;
