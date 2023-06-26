@@ -4,6 +4,7 @@
 // The return value of the function is the new value. The function is called with the starting value and the first element of the array. 
 // If no starting value is passed, the first element is used as the starting value.
 // Q: how is this diffrent than map?
+// A: map method takes a function and applies it to all elements in the array.
 
 // I just want to play with reduce method
 
