@@ -1,18 +1,40 @@
 class Group {
-    constructor (item) {
-        const group = [];
-        group.push(item);
+    constructor () {
+        this.group = [];
     }
-    add (item) {
-        this.group.push(add);
+    add (value) {
+        this.group.push(value);
+    }
+    delete(value) {
+        this.group = this.group.filter(v => v != value);
     }
 
     display () {
         console.log(this.group);
     }
+
+    has(value) {
+        for(g of this.group) {
+            if(g === value) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // static from(newGroup) {
+
+    // }
 }
 
-let g = new Group('mike');
-g.add('ashley');
+let g = new Group();
+g.add('mike');
+g.add('bob');
 
 g.display();
+
+g.delete('mike');
+g.add('roy');
+
+g.display();
+console.log(g.has('ashley'));
