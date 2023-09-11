@@ -1,5 +1,10 @@
-"# w3schoolsJavaScript" 
+To study list:
+redux slices
 
-TODO:
-setup some webspace to host simple html; w3webspace is ok but something real would be better.
-     can just open the simple html in browser =)
+To drill list:
+
+promises
+spread
+desructure
+class inheritance
+
