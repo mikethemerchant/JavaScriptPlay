@@ -57,8 +57,8 @@ g.add('bob');
 g.add('ashley');
 g.add('roy');
 
-g.display();
-
 for(let v of g) {
     console.log(v);
 }
+
+g.display();
