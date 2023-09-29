@@ -1,42 +1,52 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FLEX BOX</title>
+  </head>
+  <style>
     .flex-container {
       display: flex;
-      height: 200px;
-      align-items: stretch;
       background-color: DodgerBlue;
+      justify-content: space-around;
+      width: 900px;
+      height: 600px;
     }
-    
-    .flex-container > div {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
-    </style>
-<body>
-    <h1>What is a flex box</h1>
-    <div class="flex-container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>  
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>  
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>  
-        <div>10</div>
-        <div>11</div>
-        <div>12</div>  
-      </div>
-</body>
+    .div-all {
+      background-color: #f1f1f1;
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 55px;
+    }
+    .div-1 {
+      align-self: self-end;
+    }
+    .div-2 {
+      align-self: center;
+    }
+    .div-3 {
+      order: 1;
+    }
+    .div-4 {
+      order: 2;
+    }
+    .div-5 {
+      order: 3;
+    }
+  </style>
+  <body>
+      <h4>FLEX BOX</h4>
+      <div class="flex-container">
+          <div class="div-all div-1">1</div>
+          <div class="div-all div-2">2</div>
+          <div class="div-all div-3">3</div>  
+          <div class="div-all div-4">4</div>
+          <div class="div-all div-5">5</div>
+          <div class="div-all div-6">6</div>  
+        </div>
+  </body>
 </html>
