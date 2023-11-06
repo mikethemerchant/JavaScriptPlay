@@ -196,20 +196,20 @@ const add = function(x,y) {
   return x + y;
 }
 
-console.log(add(2,3));
+// console.log(add(2,3));
 
 // IIFE immediately invoked function
-(function() {
-  var message = "This is an IIFE";
-  console.log(message);
-})();
+// (function() {
+//   var message = "This is an IIFE";
+//    console.log(message);
+// })();
 
 //closure 
 function init() {
   var name = "Mozilla"; // name is a local variable created by init
   function displayName() {
     // displayName() is the inner function, that forms the closure
-    console.log(name); // use variable declared in the parent function
+    // console.log(name); // use variable declared in the parent function
   }
   displayName();
 }
@@ -221,7 +221,7 @@ init();
 function makeFunc() {
   const name = "funky";
   function displayName() {
-    console.log(name);
+    // console.log(name);
   }
   return displayName;
 }
@@ -242,11 +242,77 @@ const size14 = makeSizer(14);
 const size16 = makeSizer(16);
 
 // for while in of
+// for i
+for (let i = 1; i<=10; i++) {
+  // console.log(i);
+}
+//while
+let p = 1;
+while(p <= 5) {
+  if(p==4) break;
+  // console.log(p);
+  p++;
+}
 
+// create an object with a for in loop
+const person2 = {fname:"John", lname:"Doe", age:25};
 
+let text = "";
+for (let x in person2) {
+  // text += person2[x] + " ";
+  // console.log(person2[x]);
+  // console.log(x);
+}
+// console.log(text);
 
+const arr = [3, 5, 7];
+arr.foo = "hello";
 
+// in loops properties; of loops values
+for (const i in arr) {
+  // console.log(i);
+}
+// "0" "1" "2" "foo"
 
+for (const i of arr) {
+  // console.log(i);
+}
+// Logs: 3 5 7
+
+// create an array of objects 
+const people2 = [
+  {name: "mike", age: 25},
+  {name: "roy", age: 30},
+  {name: "john", age: 35},
+  {name: "chris", age: 40},
+  {name: "dave", age: 45},
+];
+for (const i of people2) {
+  // console.log(i.name);
+}
+
+// for i example
+console.log('for i');
+for (let i = 0; i < people2.length; i++) {
+  console.log(people2[i].name);
+}
+// for in
+console.log('for in');
+for (const i in people2) {
+  console.log(people2[i].name);
+}
+// for of
+console.log('for of');
+for (const i of people2) {
+  console.log(i.name);
+}
+// while
+console.log('while');
+let j = 0;
+while(j < people2.length) {
+  console.log(people2[j].name);
+  j++;
+}
 
 
 
