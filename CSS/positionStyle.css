@@ -1,0 +1,28 @@
+.parent-element {
+    background-color: blueviolet;
+    padding: 3px;
+    position: relative;
+}
+
+.main-element {
+    position: absolute;
+    left: 200px;
+    bottom: 5px;
+    background-color: yellow;
+    padding: 10px;
+}
+
+.sibling-element {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* 
+
+static - does nothing
+relative - left and bottom offset starting from it's static position
+absolute - set position inside of parent element; if next element doesn't have position: relative will resort to using html element
+fixed - set at position of html element and doesn't move with scrolling
+sticky - will be relative until scrolling makes it stick to top or bottom like fixed
+
+*/
